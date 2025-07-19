@@ -1,0 +1,17 @@
+.hightlight {
+  display: inline;
+  color: #FF7828;
+}
+
+.header {
+  background-image: url('@/public/header.png');
+  position: relative;
+  height: 75vh;
+}
+
+.header_container{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 520px;
+}
