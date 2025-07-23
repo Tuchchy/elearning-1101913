@@ -1,0 +1,138 @@
+.admin-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+  
+}
+
+.navbar {
+  color: rgb(255, 255, 255); /* ตัวหนังสือสีขาว */
+  padding: 10px 20px; /* เว้นขอบด้านใน */
+  display: flex; /* จัดให้อยู่ในแถวแนวนอน */
+  align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  justify-content: space-between; /* ช่องว่างระหว่างโลโก้กับเมนู */
+  background-color: #000000; /* สีพื้นหลังแท็บบาร์ */
+}
+
+/* โลโก้เว็บไซต์ */
+.logo {
+  font-weight: bold; /* ตัวหนา */
+  font-size: 18px; /* ขนาดตัวอักษร */
+}
+
+/* ข้อความสีส้มในโลโก้ */
+.logo .highlight {
+  color: #ff6600; /* สีส้ม */
+}
+
+/* เมนูด้านขวาของ Navbar */
+.nav-menu {
+  display: flex; /* จัดให้อยู่ในแถวแนวนอน */
+  align-items: center;
+  gap: 20px; /* ช่องว่างระหว่างเมนู */
+}
+
+/* ลิงก์ใน Navbar */
+.nav-menu a {
+  color: white;
+  text-decoration: none; /* ไม่ขีดเส้นใต้ */
+  font-size: 14px;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline; /* ขีดเส้นใต้เมื่อเอาเมาส์ชี้ */
+}
+
+/* ไอคอนผู้ใช้ (👤) */
+.user-icon {
+  font-size: 18px;
+  cursor: pointer; /* เปลี่ยนเป็นรูปมือเมื่อชี้ */
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* ไอคอนแจ้งเตือน (🔔) */
+.notification-icon {
+  font-size: 18px;
+  cursor: pointer;
+  position: relative; /* สำหรับวางจุดแดง */
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* จุดสีแดงบนไอคอนแจ้งเตือน */
+.notification-icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%; /* ให้เป็นวงกลม */
+}
+
+/* ภาพหัวเว็บ */
+.header-image {
+  width: 100%;
+  height: auto; /* ให้ภาพสูงตามอัตราส่วน */
+  object-fit: contain;
+  display: block; /* แก้ bug ช่องว่างใต้ img */
+  margin-bottom: 1rem;
+}
+
+/* Main content */
+main {
+  padding: 0 2rem;
+}
+
+/* กล่องกราฟ */
+.graph-box {
+  background-color: #E6E6E6;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+}
+
+.graph-box h3 {
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+/* กล่องรายงาน */
+.report-box {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+}
+
+/* ตารางรายงาน */
+.report-box table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.report-box th,
+.report-box td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.report-box th {
+  background-color: #ff6600;
+  color: white;
+}
+
+.report-box tbody tr:hover {
+  background-color: #f9f9f9;
+}
