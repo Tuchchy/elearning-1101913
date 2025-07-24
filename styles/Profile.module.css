@@ -1,0 +1,82 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.headerBackground {
+  height: 150px;
+  background-image: url('/header-bg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: -70px;
+  z-index: 1;
+  position: relative;
+}
+
+.profileBox {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #eee;
+  margin-right: 1rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.email {
+  color: gray;
+  font-size: 0.95rem;
+}
+
+.navTabs {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.navTabs span {
+  cursor: pointer;
+  color: #333;
+}
+
+.activeTab {
+  color: orange;
+  font-weight: bold;
+}
+
+.detailBox {
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
