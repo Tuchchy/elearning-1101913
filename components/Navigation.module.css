@@ -1,0 +1,61 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1b2a;
+  padding: 0.75rem 2rem;
+  color: #ffffff;
+  border-bottom: 2px solid #1b263b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  position: relative;
+  width: 160px;
+  height: 50px;
+  display: block;
+}
+
+.logoImage {
+  object-fit: contain;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: #fca311;
+}
+
+.signinBtn {
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #fca311;
+  border-radius: 40px;
+}
+
+.signupBtn {
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #fca311;
+  border-radius: 40px;
+}
